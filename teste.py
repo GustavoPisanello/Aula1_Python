@@ -21,7 +21,11 @@ def InputGrades(qty):
     while i < qty:
         grade = float(input(f"Digite a {i + 1}° Nota: "))
         i += 1
-        avrg.append(grade)
+        if grade > 10:
+            print("Não são permitidos números maiores que 10!")
+            return False
+        else:
+            avrg.append(grade)
     Average(qty)
 
 def Average(qty):
