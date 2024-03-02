@@ -19,7 +19,7 @@ def InputGrades(qty):
     """
     i = 0
     while i < qty:
-        grade = int(input(f"Digite a {i + 1}° Nota: "))
+        grade = float(input(f"Digite a {i + 1}° Nota: "))
         i += 1
         avrg.append(grade)
     Average(qty)
